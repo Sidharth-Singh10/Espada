@@ -6,7 +6,10 @@ export default function Home() {
   return (
     <main >
      <Navbar/>
-      <Intro/>
+     <div className="h-screen w-screen bg-[#F9E8C9]">
+   
+     </div>
+    
     </main>
   );
 }
