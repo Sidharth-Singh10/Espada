@@ -87,7 +87,7 @@ const Second = () => {
       </div>
       <div className="bg-[#030511] h-auto w-auto relative  z-10 top-full rounded-t-[80px] p-12 mt-16 flex flex-col bg-gradient-to-b from-[#0864e5] to-[#020024]">
         <div className="flex space-x-4 mt-5 px-5">
-          <div className="card w-1/3 bg-base-100 shadow-xl image-full">
+          <div className="card w-1/3 bg-base-100 shadow-xl image-full transform hover:scale-105 transition-transform duration-300">
             <figure>
               <img src="/card1.png" alt="Shoes" />
             </figure>
@@ -106,7 +106,7 @@ const Second = () => {
               </div>
             </div>
           </div>
-          <div className="card w-1/3 bg-base-100 shadow-xl image-full">
+          <div className="card w-1/3 bg-base-100 shadow-xl image-full transform hover:scale-105 transition-transform duration-300">
             <figure>
               <img src="/card2.png" alt="Shoes" />
             </figure>
@@ -125,7 +125,7 @@ const Second = () => {
               </div>
             </div>
           </div>
-          <div className="card w-1/3 bg-base-100 shadow-xl image-full">
+          <div className="card w-1/3 bg-base-100 shadow-xl image-full transform hover:scale-105 transition-transform duration-300">
             <figure>
               <img src="/card3.png" alt="Shoes" />
             </figure>
@@ -144,7 +144,7 @@ const Second = () => {
           </div>
         </div>
         <div className="flex space-x-4 mt-5 px-5">
-          <div className="card w-1/3 bg-base-100 shadow-xl image-full">
+          <div className="card w-1/3 bg-base-100 shadow-xl image-full transform hover:scale-105 transition-transform duration-300">
             <figure>
               <img src="/card4.png" alt="Shoes" />
             </figure>
@@ -164,7 +164,7 @@ const Second = () => {
               </div>
             </div>
           </div>
-          <div className="card w-1/3 bg-base-100 shadow-xl image-full">
+          <div className="card w-1/3 bg-base-100 shadow-xl image-full transform hover:scale-105 transition-transform duration-300">
             <figure>
               <img src="/card5.png" alt="Shoes" />
             </figure>
@@ -184,7 +184,7 @@ const Second = () => {
               </div>
             </div>
           </div>
-          <div className="card w-1/3 bg-base-100 shadow-xl image-full">
+          <div className="card w-1/3 bg-base-100 shadow-xl image-full transform hover:scale-105 transition-transform duration-300">
             <figure>
               <img src="/card6.png" alt="Shoes" />
             </figure>
@@ -207,7 +207,7 @@ const Second = () => {
         </div>
 
         <div className="flex space-x-4 mt-5 px-5">
-          <div className="card w-1/3 bg-base-100 shadow-xl image-full">
+          <div className="card w-1/3 bg-base-100 shadow-xl image-full transform hover:scale-105 transition-transform duration-300">
             <figure>
               <img src="/card7.png" alt="Shoes" />
             </figure>
@@ -228,7 +228,7 @@ const Second = () => {
               </div>
             </div>
           </div>
-          <div className="card w-1/3 bg-base-100 shadow-xl image-full">
+          <div className="card w-1/3 bg-base-100 shadow-xl image-full transform hover:scale-105 transition-transform duration-300">
             <figure>
               <img src="/card8.png" alt="Shoes" />
             </figure>
@@ -248,7 +248,7 @@ const Second = () => {
               </div>
             </div>
           </div>
-          <div className="card w-1/3 bg-base-100 shadow-xl image-full">
+          <div className="card w-1/3 bg-base-100 shadow-xl image-full transform hover:scale-105 transition-transform duration-300">
             <figure>
               <img src="/card9.png" alt="Shoes" />
             </figure>
