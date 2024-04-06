@@ -13,8 +13,18 @@ import { clusterApiUrl } from "@solana/web3.js";
 import React, { FC, ReactNode, createContext, useMemo } from "react";
 import { useEffect, useState } from "react";
 import { BalanceDisplay } from "./balance";
+import axios from 'axios'
+
 
 require("@solana/wallet-adapter-react-ui/styles.css");
+import {
+  Connection,
+  Transaction,
+  SystemProgram,
+  sendAndConfirmTransaction,
+  PublicKey,
+} from "@solana/web3.js";
+
 
 const Nav = () => {
   return (
@@ -44,6 +54,70 @@ const Context = ({ children }) => {
 };
 
 const Content = () => {
+  const { connection } = useConnection();
+const { publicKey } = useWallet();
+  const [value, setValue] = useState({
+    gold: "0",
+    sols: "0",
+  });
+
+  const [inputs, setinputs] = useState('');
+  const handleInputChange = (event) => {
+    setinputs(event.target.value);
+  };
+
+  const [balances,setbalance] = useState('0');
+
+const apiKeyExchangeRate = 'YOUR_API_KEY'; // Replace with your API key
+const baseCurrency = 'USD';
+const targetCurrency = 'INR';
+// API details for converting USD to Gold
+const endpointGold = 'https://api.metalpriceapi.com/v1/latest';
+const apiKeyGold = 'bfca23b91354f653036fa053f4e68f3d';
+const currencies = 'XAU';
+// Amount in INR (Rupees)
+// Fetch exchange rate
+const exchangeRateEndpoint = `https://api.exchangerate-api.com/v4/latest/${baseCurrency}`;
+
+  const changebalance = () =>
+  {
+    setbalance(value.sols);
+  }
+
+const converts = async () => {
+  try {
+      const amountINR = parseInt(inputs); 
+      const response = await axios.get(exchangeRateEndpoint);
+      if (response.data && response.data.rates && response.data.rates[targetCurrency]) {
+        // Calculate equivalent amount in USD
+        const exchangeRate = response.data.rates[targetCurrency];
+        const amountUSD = amountINR / exchangeRate;
+
+        // Fetch gold rate
+        const goldResponse = await axios.get(`${endpointGold}?api_key=${apiKeyGold}&base=${baseCurrency}&currencies=${currencies}`);
+        const goldRatePerOunce = goldResponse.data.rates.XAU;
+        const goldRatePerGram = goldRatePerOunce / 0.00000587248;
+        const goldPerUSD = 1 / goldRatePerGram;
+
+        const equivalentGold = goldPerUSD * amountUSD;
+        const gramgold = equivalentGold.toFixed(2);
+        const espvalue = (1 / 0.15) * gramgold;
+        setValue({
+          gold: equivalentGold.toFixed(2),
+          sols: espvalue.toFixed(2),
+      });
+
+        console.log(`${amountINR} INR is equivalent to ${equivalentGold.toFixed(2)} grams of gold.`);
+      } else {
+        console.error('Error: Unable to fetch exchange rate data');
+      }
+    } catch (error) {
+      console.error('Error fetching data:', error.message);
+    }
+
+  }
+
+
   return (
     <div className="px-12 pt-4 ">
       <div className="navbar bg-white text-black w-11/12 bg-opacity-55 fixed   rounded-3xl shadow-md z-50 ">
@@ -111,27 +185,43 @@ const Content = () => {
             <li className="pt-4 px-8 ">
               <a>Contact us</a>
             </li>
-            <li className=" pt-2 pr-16">
+            <li className=" pt-2 pr-8">
               {/* Open the modal using document.getElementById('ID').showModal() method */}
               <button className="btn btn-ghost" onClick={() => document.getElementById('my_modal_1').showModal()}>Buy ESP</button>
-              <dialog id="my_modal_1" className="modal">
-                <div className="modal-box mt-40 ml-96">
-                  <h3 className="font-bold text-lg">Hello!</h3>
-                  <p className="py-4">Press ESC key or click the button below to close</p>
+              <dialog id="my_modal_1" className="modal flex justify-center items-center">
+                <div className="modal-box ">
+                  <h3 className="font-bold text-lg ">BUY ESP</h3>
+                  <div className="mt-2 flex gap-2">
+                  <input type="text" value={inputs} onChange={handleInputChange} id="amounts" placeholder="Enter Amount in INR" className="input  input-bordered input-primary w-full max-w-xs" />
+                  <button className="btn btn-primary" onClick={converts} >Convert</button>
+                  </div>
+                  <div className="mt-4">
+                    Equivalent Amount:
+                  </div>
+                  <div className="flex mt-2 gap-4 ">
+                    <div className="btn btn-outline btn-md ">
+                      {value.gold}g Gold
+                    </div>
+                    <div className="btn btn-outline">
+                      {value.sols}SOL
+                    </div>
+                  </div>
                   <div className="modal-action">
+                    <button className="btn btn-wide btn-success" onClick={changebalance}>
+                      Confirm Payment
+                    </button>
                     <form method="dialog">
-                     
                       <button className="btn">Close</button>
                     </form>
                   </div>
                 </div>
               </dialog>
-            
-             
-               
+
+
+
             </li>
-            <li className="pt-4">
-              <BalanceDisplay />
+            <li className="pt-4 text-md">
+              <span>Balance:<span>{balances} </span> </span>
             </li>
             <li className="">
               <WalletMultiButton />
@@ -139,14 +229,6 @@ const Content = () => {
           </ul>
         </div>
         <div className="flex-none gap-2">
-          {/* <div className="form-control">
-            <input
-              type="text"
-              placeholder="Search"
-              className="input input-bordered w-24 md:w-auto"
-
-            />
-          </div> */}
           <div className="dropdown dropdown-end">
             <div
               tabIndex={0}
