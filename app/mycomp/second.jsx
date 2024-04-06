@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 const Second = () => {
@@ -36,9 +37,12 @@ const Second = () => {
                 Extending a lifeline to those facing crises with transparent and
                 impactful donations, offering support in times of dire need
               </p>
-              <button className="btn btn-outline font-extrabold btn-lg absolute top-[70%] ">
+              <Link href="/Healthcare" className="absolute top-[70%]">
+              <button className="btn btn-outline font-extrabold btn-lg  ">
                 JOIN US
               </button>
+              </Link>
+             
             </div>
           </div>
         </div>
