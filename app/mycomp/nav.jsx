@@ -1,16 +1,20 @@
-"use client"
+"use client";
 import { useConnection, useWallet } from "@solana/wallet-adapter-react";
-import { WalletAdapterNetwork } from '@solana/wallet-adapter-base';
-import { ConnectionProvider, WalletProvider } from '@solana/wallet-adapter-react';
-import { WalletModalProvider, WalletMultiButton } from '@solana/wallet-adapter-react-ui';
-import { clusterApiUrl } from '@solana/web3.js';
-import React, { FC, ReactNode, createContext, useMemo } from 'react';
+import { WalletAdapterNetwork } from "@solana/wallet-adapter-base";
+import {
+  ConnectionProvider,
+  WalletProvider,
+} from "@solana/wallet-adapter-react";
+import {
+  WalletModalProvider,
+  WalletMultiButton,
+} from "@solana/wallet-adapter-react-ui";
+import { clusterApiUrl } from "@solana/web3.js";
+import React, { FC, ReactNode, createContext, useMemo } from "react";
 import { useEffect, useState } from "react";
 import { BalanceDisplay } from "./balance";
 
-
-
-require('@solana/wallet-adapter-react-ui/styles.css');
+require("@solana/wallet-adapter-react-ui/styles.css");
 
 const Nav = () => {
   return (
@@ -28,13 +32,7 @@ const Context = ({ children }) => {
   // You can also provide a custom RPC endpoint.
   const endpoint = useMemo(() => clusterApiUrl(network), [network]);
 
-  const wallets = useMemo(
-    () => [
-
-
-    ],
-    [network]
-  );
+  const wallets = useMemo(() => [], [network]);
 
   return (
     <ConnectionProvider endpoint={endpoint}>
@@ -51,11 +49,7 @@ const Content = () => {
       <div className="navbar bg-white text-black w-11/12 bg-opacity-55 fixed   rounded-3xl shadow-md z-50 ">
         <div className="navbar-start">
           <div className="dropdown">
-            <div
-              tabIndex={0}
-              role="button"
-              className="btn btn-ghost lg:hidden"
-            >
+            <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="h-5 w-5"
@@ -97,11 +91,11 @@ const Content = () => {
           <a className="btn btn-ghost text-xl">Espada</a>
         </div>
         <div className="navbar-center hidden lg:flex">
-          <ul className="menu menu-horizontal px-1">
-            <li>
+          <ul className="menu  menu-horizontal  ">
+            <li className="pt-4   ">
               <a>About Us</a>
             </li>
-            <li>
+            <li className="pt-4   ">
               <details>
                 <summary>Info</summary>
                 <ul className="p-2">
@@ -114,26 +108,26 @@ const Content = () => {
                 </ul>
               </details>
             </li>
-            <li>
+            <li className="pt-4 pr-40 ">
               <a>Contact us</a>
             </li>
-            <li>
-              <WalletMultiButton />
-            </li>
-            <li>
+            <li >
               <BalanceDisplay />
+            </li>
+            <li className="">
+              <WalletMultiButton />
             </li>
           </ul>
         </div>
         <div className="flex-none gap-2">
-          <div className="form-control">
+          {/* <div className="form-control">
             <input
               type="text"
               placeholder="Search"
               className="input input-bordered w-24 md:w-auto"
 
             />
-          </div>
+          </div> */}
           <div className="dropdown dropdown-end">
             <div
               tabIndex={0}
@@ -189,5 +183,3 @@ const Content = () => {
     </div>
   );
 };
-
-
