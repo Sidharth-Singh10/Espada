@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function Navbar() {
     return (
         <main >
-            <div className="navbar bg-[#FFFFFF] ">
+            <div className="navbar bg-[#FFFFFF] border-b ">
                 <div className="navbar-start">
                     <div className="dropdown">
                         <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
