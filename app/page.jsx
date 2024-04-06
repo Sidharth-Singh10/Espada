@@ -2,16 +2,17 @@ import Image from "next/image";
 import Intro from "./Components/Intro";
 import Navbar from "./Components/Navbar";
 import Choice from "./Components/choices";
+import Nav from "./Components/Nav";
 
 export default function Home() {
   return (
     <div className="h-screen w-screen" >
 
-      <div className=" fixed top-0 z-0 h-full w-full">
-        <Navbar />
-        <div className="h-full w-full flex flex-col items-center bg-gradient-to-b from-[#FFFFFF] to-[#E5F0FF] ">
+      <div className=" fixed top-0 z-0 h-full w-full ">
+        <Nav />
+        <div className="h-full w-full flex flex-col z-0 items-center bg-gradient-to-b from-[#FFFFFF] to-[#E5F0FF] ">
 
-          <h1 className=" relative top-[8%] text-5xl font-extrabold   ">
+          <h1 className=" relative top-[8%] text-5xl font-extrabold pt-10 ">
             <span className="text-[#296aec]"> Transparent </span>
             <span className="text-[#3b3f61]"> Donations, </span>
             <span className="text-[#296aec]">  Tangible </span>
