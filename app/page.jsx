@@ -29,7 +29,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="bg-black h-full w-full relative  z-10 top-full rounded-t-[80px] p-12  flex flex-col ">
+      <div className="bg-[#030511] h-full w-full relative  z-10 top-full rounded-t-[80px] p-12  flex flex-col ">
 
         <div className=" flex justify-around h-full">
 
@@ -71,7 +71,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="bg-black h-full w-full relative  z-10 top-full  p-12  flex flex-col ">
+      <div className="bg-[#030511] h-full w-full relative  z-10 top-full  p-12  flex flex-col ">
 
         <div className=" flex justify-around h-full">
 
