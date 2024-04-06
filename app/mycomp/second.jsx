@@ -4,29 +4,25 @@ const Second = () => {
   return (
     <div className="h-screen w-screen bg-white z-20">
       <div className="bg-[#030511] h-full w-full relative  z-10 top-full rounded-t-[80px] p-12  flex flex-col bg-gradient-to-b from-[#0864e5] to-[#020024]  ">
-        <div className=" flex justify-around h-full">
-          <div className="card w-96 bg-base-100 shadow-xl image-full transform hover:scale-105 transition-transform duration-300">
-            <div className=" flex flex-row justify-around"></div>
+        <div className=" flex justify-around h-full space-x-40 px-10">
+          <div className="card w-auto bg-base-100 shadow-xl image-full transform hover:scale-105 transition-transform duration-300">
             <figure>
               <img src="/education.png" alt="Shoes" />
             </figure>
-            <div className="card-body gap-4 items-center">
-              <h2 className="card-title text-6xl">ESPADA</h2>
-
+            <div className="card-body gap-4 items-center ">
+              <h2 className="card-title font-bold text-6xl">ESPADA</h2>
               <h2 className="text-2xl  font-bold top-4"> EDUCATION MISSION </h2>
-
               <p className="text-xl font-semibold text-center">
                 Enabling brighter futures through educational support and
                 opportunities for underprivileged communities.
               </p>
-
               <button className="btn btn-outline font-extrabold btn-lg absolute top-[70%] ">
                 JOIN US
               </button>
             </div>
           </div>
 
-          <div className="card w-96 bg-base-100 shadow-xl image-full transform hover:scale-105 transition-transform duration-300">
+          <div className="card w-auto bg-base-100 shadow-xl image-full transform hover:scale-105 transition-transform duration-300">
             <figure>
               <img src="/healthcare.png" alt="Shoes" />
             </figure>
@@ -37,8 +33,8 @@ const Second = () => {
                 HEALTHCARE MISSION{" "}
               </h2>
               <p className="text-xl font-semibold text-center">
-                Empowering healthcare access for those in need through
-                transparent and impactful donations
+                Extending a lifeline to those facing crises with transparent and
+                impactful donations, offering support in times of dire need
               </p>
               <button className="btn btn-outline font-extrabold btn-lg absolute top-[70%] ">
                 JOIN US
@@ -49,8 +45,8 @@ const Second = () => {
       </div>
 
       <div className="bg-[#030511] h-full w-full relative  z-10 top-full rounded-b-[80px]  p-12  flex flex-col bg-gradient-to-b from-[#020024] to-[#0864e5] ">
-        <div className=" flex justify-around h-full">
-          <div className="card w-96 bg-base-100 shadow-xl image-full transform hover:scale-105 transition-transform duration-300">
+        <div className=" flex justify-around h-full space-x-40 px-10">
+          <div className="card w-auto bg-base-100 shadow-xl image-full transform hover:scale-105 transition-transform duration-300">
             <figure>
               <img src="/food.png" alt="Shoes" />
             </figure>
@@ -64,11 +60,10 @@ const Second = () => {
               <button className="btn btn-outline font-extrabold btn-lg absolute top-[70%] ">
                 JOIN US
               </button>
-            
             </div>
           </div>
 
-          <div className="card w-96 bg-base-100 shadow-xl image-full transform hover:scale-105 transition-transform duration-300">
+          <div className="card w-auto bg-base-100 shadow-xl image-full transform hover:scale-105 transition-transform duration-300">
             <figure>
               <img src="/pic.png" alt="Shoes" />
             </figure>
@@ -90,10 +85,7 @@ const Second = () => {
         <div className="flex space-x-4 mt-5 px-5">
           <div className="card w-1/3 bg-base-100 shadow-xl image-full">
             <figure>
-              <img
-                src="/card1.png"
-                alt="Shoes"
-              />
+              <img src="/card1.png" alt="Shoes" />
             </figure>
             <div className="card-body">
               <h2 className="card-title text-2xl font-bold">
@@ -112,10 +104,7 @@ const Second = () => {
           </div>
           <div className="card w-1/3 bg-base-100 shadow-xl image-full">
             <figure>
-              <img
-                src="/card2.png"
-                alt="Shoes"
-              />
+              <img src="/card2.png" alt="Shoes" />
             </figure>
             <div className="card-body">
               <h2 className="card-title text-2xl font-bold">
@@ -134,10 +123,7 @@ const Second = () => {
           </div>
           <div className="card w-1/3 bg-base-100 shadow-xl image-full">
             <figure>
-              <img
-                src="/card3.png"
-                alt="Shoes"
-              />
+              <img src="/card3.png" alt="Shoes" />
             </figure>
             <div className="card-body">
               <h2 className="card-title text-2xl font-bold">
@@ -149,18 +135,14 @@ const Second = () => {
                 transparency and accountability every step of the way. Join us
                 in revolutionizing charitable giving.
               </p>
-              <div className="card-actions justify-end">
-              </div>
+              <div className="card-actions justify-end"></div>
             </div>
           </div>
         </div>
         <div className="flex space-x-4 mt-5 px-5">
           <div className="card w-1/3 bg-base-100 shadow-xl image-full">
             <figure>
-              <img
-                src="/card4.png"
-                alt="Shoes"
-              />
+              <img src="/card4.png" alt="Shoes" />
             </figure>
             <div className="card-body">
               <h2 className="card-title text-2xl font-bold">
@@ -180,10 +162,7 @@ const Second = () => {
           </div>
           <div className="card w-1/3 bg-base-100 shadow-xl image-full">
             <figure>
-              <img
-                src="/card5.png"
-                alt="Shoes"
-              />
+              <img src="/card5.png" alt="Shoes" />
             </figure>
             <div className="card-body">
               <h2 className="card-title text-2xl font-bold">
@@ -193,8 +172,8 @@ const Second = () => {
                 Follow your donation's journey with a unique identification
                 number. Witness firsthand how your contribution makes a
                 difference, without ambiguity. Join us in ensuring
-                accountability and making tangible impacts in
-                communities worldwide.
+                accountability and making tangible impacts in communities
+                worldwide.
               </p>
               <div className="card-actions justify-end">
                 {/* <button className="btn btn-primary">Buy Now</button> */}
@@ -203,10 +182,7 @@ const Second = () => {
           </div>
           <div className="card w-1/3 bg-base-100 shadow-xl image-full">
             <figure>
-              <img
-                src="/card6.png"
-                alt="Shoes"
-              />
+              <img src="/card6.png" alt="Shoes" />
             </figure>
             <div className="card-body">
               <h2 className="card-title text-2xl font-bold">
@@ -229,10 +205,7 @@ const Second = () => {
         <div className="flex space-x-4 mt-5 px-5">
           <div className="card w-1/3 bg-base-100 shadow-xl image-full">
             <figure>
-              <img
-                src="/card7.png"
-                alt="Shoes"
-              />
+              <img src="/card7.png" alt="Shoes" />
             </figure>
             <div className="card-body">
               <h2 className="card-title text-2xl font-bold">
@@ -253,16 +226,19 @@ const Second = () => {
           </div>
           <div className="card w-1/3 bg-base-100 shadow-xl image-full">
             <figure>
-              <img
-                src="/card8.png"
-                alt="Shoes"
-              />
+              <img src="/card8.png" alt="Shoes" />
             </figure>
             <div className="card-body">
-              <h2 className="card-title text-2xl font-bold">Exclusive Rewards Program
-</h2>
+              <h2 className="card-title text-2xl font-bold">
+                Exclusive Rewards Program
+              </h2>
               <p className="text-md ">
-              Join us and unlock exclusive benefits! Donate on ESPADA to earn points redeemable at partner brands for discounts and special offers. Your donations not only make a difference but also reward you with privileged access to top brands. Join the movement today!              </p>
+                Join us and unlock exclusive benefits! Donate on ESPADA to earn
+                points redeemable at partner brands for discounts and special
+                offers. Your donations not only make a difference but also
+                reward you with privileged access to top brands. Join the
+                movement today!{" "}
+              </p>
               <div className="card-actions justify-end">
                 {/* <button className="btn btn-primary">Buy Now</button> */}
               </div>
@@ -270,16 +246,17 @@ const Second = () => {
           </div>
           <div className="card w-1/3 bg-base-100 shadow-xl image-full">
             <figure>
-              <img
-                src="/card9.png"
-                alt="Shoes"
-              />
+              <img src="/card9.png" alt="Shoes" />
             </figure>
             <div className="card-body">
-              <h2 className="card-title text-2xl font-bold">Join the Movement
-</h2>
+              <h2 className="card-title text-2xl font-bold">
+                Join the Movement
+              </h2>
               <p className="text-md ">
-              Be part of our mission to make a difference. Participate in donation drives, track your impact, and enjoy exclusive benefits. Your support fuels positive change globally. Join us today in creating a better world for all.
+                Be part of our mission to make a difference. Participate in
+                donation drives, track your impact, and enjoy exclusive
+                benefits. Your support fuels positive change globally. Join us
+                today in creating a better world for all.
               </p>
               <div className="card-actions justify-end">
                 {/* <button className="btn btn-primary">Buy Now</button> */}
