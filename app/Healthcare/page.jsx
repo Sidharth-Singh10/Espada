@@ -1,12 +1,12 @@
 "use client";
 // import Navbar from "../Components/Navbar";
-import Nav from "../mycomp/nav";
+import Nav2 from "../mycomp/nav2";
 
 export default function Home() {
   return (
     <div className="h-screen w-screen bg-gradient-to-b from-[#FFFFFF] to-[#0864e5]">
       <div>
-        <Nav />
+        <Nav2 />
       </div>
 
       <div className="   h-full gap-4 flex justify-around p-5 pt-28">
