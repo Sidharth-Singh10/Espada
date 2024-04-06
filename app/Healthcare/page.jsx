@@ -39,8 +39,8 @@ export default function Home() {
                         <h2 className="card-title font-bold text-6xl">ESPADA</h2>
                         <h2 className="text-2xl  font-bold top-4"> GENERAL FUND </h2>
                         <p className="text-xl font-semibold text-center">Make a difference where it's needed most by contributing to our General Fund, ensuring vital support for various healthcare initiatives and programs</p>
-                        <button className="btn btn-outline font-extrabold btn-lg absolute top-[70%] " onClick={() => document.getElementById('my_modal_3').showModal()}>Donate</button>
-                        <dialog id="my_modal_3" className="modal">
+                        <button className="btn btn-outline font-extrabold btn-lg absolute top-[70%] " onClick={() => document.getElementById('my_modal_4').showModal()}>Donate</button>
+                        <dialog id="my_modal_4" className="modal">
                             <div className="modal-box flex flex-col gap-2">
                                 <form method="dialog">
                                     {/* if there is a button in form, it will close the modal */}
@@ -64,8 +64,8 @@ export default function Home() {
                         <h2 className="card-title font-bold text-6xl">ESPADA</h2>
                         <h2 className="text-2xl  font-bold top-4"> EMERGENCY FUND</h2>
                         <p className="text-xl font-semibold text-center">Be a beacon of hope in times of crisis by donating to our Emergency Fund, offering swift assistance to individuals facing urgent medical needs and unforeseen emergencies</p>
-                        <button className="btn btn-outline font-extrabold btn-lg absolute top-[70%] " onClick={() => document.getElementById('my_modal_3').showModal()}>Donate</button>
-                        <dialog id="my_modal_3" className="modal">
+                        <button className="btn btn-outline font-extrabold btn-lg absolute top-[70%] " onClick={() => document.getElementById('my_modal_5').showModal()}>Donate</button>
+                        <dialog id="my_modal_5" className="modal">
                             <div className="modal-box flex flex-col gap-2">
                                 <form method="dialog">
                                     {/* if there is a button in form, it will close the modal */}
