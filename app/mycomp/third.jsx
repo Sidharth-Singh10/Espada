@@ -1,11 +1,16 @@
-import React from 'react'
+import React from "react";
 
-const Third = () => {
+const Card = () => {
   return (
-    <div className="h-screen w-screen bg-orange z-30">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus, beatae ipsa vero optio iusto animi eum sunt quo autem pariatur id enim nihil architecto labore? Nam voluptate quod tempore est.
-    </div>
-  )
-}
+    <div className="  top-900  h-full w-full  z-30 ">
 
-export default Third
+    <div className="bg-white">
+    
+
+      
+    </div>
+    </div>
+  );
+};
+
+export default Card;

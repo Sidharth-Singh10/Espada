@@ -3,7 +3,7 @@ import React from "react";
 const Second = () => {
   return (
     <div className="h-screen w-screen bg-white z-20">
-      <div className="bg-[#55565c] h-full w-full relative  z-10 top-full rounded-t-[80px] p-12  flex flex-col ">
+      <div className="bg-[#030511] h-full w-full relative  z-10 top-full rounded-t-[80px] p-12  flex flex-col ">
         <div className=" flex justify-around h-full">
           <div className="card w-96 bg-base-100 shadow-xl image-full transform hover:scale-105 transition-transform duration-300">
             <div className=" flex flex-row justify-around"></div>
@@ -48,7 +48,7 @@ const Second = () => {
         </div>
       </div>
 
-      <div className="bg-[#030511] h-full w-full relative  z-10 top-full  p-12  flex flex-col ">
+      <div className="bg-[#030511] h-full w-full relative  z-10 top-full rounded-b-[80px]  p-12  flex flex-col ">
         <div className=" flex justify-around h-full">
           <div className="card w-96 bg-base-100 shadow-xl image-full transform hover:scale-105 transition-transform duration-300">
             <figure>
@@ -61,9 +61,9 @@ const Second = () => {
                 Providing nourishment and hope through transparent food
                 donations to those facing hunger and food insecurity.
               </p>
-              <button className="btn btn-outline font-extrabold btn-lg absolute top-[70%] ">
+              {/* <button className="btn btn-outline font-extrabold btn-lg absolute top-[70%] ">
                 JOIN US
-              </button>
+              </button> */}
             </div>
           </div>
 
@@ -78,17 +78,159 @@ const Second = () => {
                 Extending a lifeline to those facing crises with transparent and
                 impactful donations, offering support in times of dire need
               </p>
-              <button className="btn btn-outline font-extrabold btn-lg absolute top-[70%] ">
+              {/* <button className="btn btn-outline font-extrabold btn-lg absolute top-[70%] ">
                 JOIN US
-              </button>
+              </button> */}
             </div>
           </div>
         </div>
       </div>
+      <div className="bg-[#030511] h-auto w-full relative  z-10 top-full rounded-t-[80px] p-12 mt-16 flex flex-col ">
+        <div className="flex space-x-4 mt-5 px-5">
+          <div className="card w-1/3 bg-base-100 shadow-xl image-full">
+            <figure>
+              <img
+                src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
+                alt="Shoes"
+              />
+            </figure>
+            <div className="card-body">
+              <h2 className="card-title">Shoes!</h2>
+              <p>If a dog chews shoes whose shoes does he choose?</p>
+              <div className="card-actions justify-end">
+                {/* <button className="btn btn-primary">Buy Now</button> */}
+              </div>
+            </div>
+          </div>
+          <div className="card w-1/3 bg-base-100 shadow-xl image-full">
+            <figure>
+              <img
+                src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
+                alt="Shoes"
+              />
+            </figure>
+            <div className="card-body">
+              <h2 className="card-title">Shoes!</h2>
+              <p>If a dog chews shoes whose shoes does he choose?</p>
+              <div className="card-actions justify-end">
+                {/* <button className="btn btn-primary">Buy Now</button> */}
+              </div>
+            </div>
+          </div>
+          <div className="card w-1/3 bg-base-100 shadow-xl image-full">
+            <figure>
+              <img
+                src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
+                alt="Shoes"
+              />
+            </figure>
+            <div className="card-body">
+              <h2 className="card-title">Shoes!</h2>
+              <p>If a dog chews shoes whose shoes does he choose?</p>
+              <div className="card-actions justify-end">
+                {/* <button className="btn btn-primary">Buy Now</button> */}
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="flex space-x-4 mt-5 px-5">
+          <div className="card w-1/3 bg-base-100 shadow-xl image-full">
+            <figure>
+              <img
+                src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
+                alt="Shoes"
+              />
+            </figure>
+            <div className="card-body">
+              <h2 className="card-title">Shoes!</h2>
+              <p>If a dog chews shoes whose shoes does he choose?</p>
+              <div className="card-actions justify-end">
+                {/* <button className="btn btn-primary">Buy Now</button> */}
+              </div>
+            </div>
+          </div>
+          <div className="card w-1/3 bg-base-100 shadow-xl image-full">
+            <figure>
+              <img
+                src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
+                alt="Shoes"
+              />
+            </figure>
+            <div className="card-body">
+              <h2 className="card-title">Shoes!</h2>
+              <p>If a dog chews shoes whose shoes does he choose?</p>
+              <div className="card-actions justify-end">
+                {/* <button className="btn btn-primary">Buy Now</button> */}
+              </div>
+            </div>
+          </div>
+          <div className="card w-1/3 bg-base-100 shadow-xl image-full">
+            <figure>
+              <img
+                src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
+                alt="Shoes"
+              />
+            </figure>
+            <div className="card-body">
+              <h2 className="card-title">Shoes!</h2>
+              <p>If a dog chews shoes whose shoes does he choose?</p>
+              <div className="card-actions justify-end">
+                {/* <button className="btn btn-primary">Buy Now</button> */}
+              </div>
+            </div>
+          </div>
+        </div>
 
+        <div className="flex space-x-4 mt-5 px-5">
+          <div className="card w-1/3 bg-base-100 shadow-xl image-full">
+            <figure>
+              <img
+                src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
+                alt="Shoes"
+              />
+            </figure>
+            <div className="card-body">
+              <h2 className="card-title">Shoes!</h2>
+              <p>If a dog chews shoes whose shoes does he choose?</p>
+              <div className="card-actions justify-end">
+                {/* <button className="btn btn-primary">Buy Now</button> */}
+              </div>
+            </div>
+          </div>
+          <div className="card w-1/3 bg-base-100 shadow-xl image-full">
+            <figure>
+              <img
+                src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
+                alt="Shoes"
+              />
+            </figure>
+            <div className="card-body">
+              <h2 className="card-title">Shoes!</h2>
+              <p>If a dog chews shoes whose shoes does he choose?</p>
+              <div className="card-actions justify-end">
+                {/* <button className="btn btn-primary">Buy Now</button> */}
+              </div>
+            </div>
+          </div>
+          <div className="card w-1/3 bg-base-100 shadow-xl image-full">
+            <figure>
+              <img
+                src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
+                alt="Shoes"
+              />
+            </figure>
+            <div className="card-body">
+              <h2 className="card-title">Shoes!</h2>
+              <p>If a dog chews shoes whose shoes does he choose?</p>
+              <div className="card-actions justify-end">
+                {/* <button className="btn btn-primary">Buy Now</button> */}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };
 
 export default Second;
-

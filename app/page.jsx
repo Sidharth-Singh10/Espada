@@ -2,23 +2,23 @@ import Image from "next/image";
 import Nav from "./mycomp/nav";
 import First from "./mycomp/first";
 import Second from "./mycomp/second";
-import Third from "./mycomp/third";
+// import Card from "./mycomp/third";
 
 export default function Home() {
   return (
-    <div className="h-screen w-screen bg-white">
-      <div >
+    <div className="h-screen w-screen bg-white flex flex-col">
+      <div>
         <Nav />
       </div>
-      <div>
-        <First />
+
+      <div className="flex-grow">
+        <div>
+          <First />
+          <Second />
+        </div>
       </div>
-      <div>
-        <Second/>
-      </div>
-      <div>
-        <Third/>
-      </div>
+
+      
     </div>
   );
 }
