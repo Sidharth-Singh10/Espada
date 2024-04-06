@@ -1,8 +1,10 @@
 "use client";
+import Link from "next/link";
 // import Navbar from "../Components/Navbar";
 import Nav2 from "../mycomp/nav2";
 
 export default function Home() {
+
   return (
     <div className="h-screen w-screen bg-gradient-to-b from-[#FFFFFF] to-[#0864e5]">
       <div>
@@ -48,7 +50,10 @@ export default function Home() {
                     placeholder="69 ESP"
                     className="input input-bordered input-primary w-full max-w-xs"
                   />
+                  <Link href="/Profile">
                   <button className="btn btn-primary">Enter</button>
+                  </Link>
+                 
                 </div>
               </div>
             </dialog>
