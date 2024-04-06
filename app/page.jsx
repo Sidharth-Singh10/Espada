@@ -78,13 +78,12 @@ export default function Home() {
 
           <div className="card w-96 bg-base-100 shadow-xl image-full transform hover:scale-105 transition-transform duration-300">
             <figure><img src="/food.png" alt="Shoes" /></figure>
-            <div className="card-body gap-4 items-center">
+            <div className="card-body gap-4 items-center ">
               <h2 className="card-title font-bold text-6xl">ESPADA</h2>
               <h2 className="text-2xl  font-bold top-4"> HUNGER MISSION </h2>
               <p className="text-xl font-semibold text-center">Providing nourishment and hope through transparent food donations to those facing hunger and food insecurity.</p>
-              <div className="card-actions justify-end">
-                <button className="btn btn-primary">Buy Now</button>
-              </div>
+              <button className="btn btn-outline font-extrabold btn-lg absolute top-[70%] ">JOIN US</button>
+              
             </div>
           </div>
 
