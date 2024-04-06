@@ -9,9 +9,9 @@ const Second = () => {
             <figure>
               <img src="/education.png" alt="Shoes" />
             </figure>
-            <div className="card-body gap-4 items-center ">
-              <h2 className="card-title font-bold text-6xl">ESPADA</h2>
-              <h2 className="text-2xl  font-bold top-4"> EDUCATION MISSION </h2>
+            <div className="card-body gap-4 items-center  ">
+              <h2 className="card-title font-bold text-6xl pt-5 ">ESPADA</h2>
+              <h2 className="text-2xl  font-bold top-4 py-3 "> EDUCATION MISSION </h2>
               <p className="text-xl font-semibold text-center">
                 Enabling brighter futures through educational support and
                 opportunities for underprivileged communities.
@@ -27,10 +27,10 @@ const Second = () => {
               <img src="/healthcare.png" alt="Shoes" />
             </figure>
             <div className="card-body gap-4 items-center">
-              <h2 className="card-title font-bold text-6xl">ESPADA</h2>
-              <h2 className="text-2xl  font-bold top-4">
-                {" "}
-                HEALTHCARE MISSION{" "}
+              <h2 className="card-title font-bold text-6xl pt-5">ESPADA</h2>
+              <h2 className="text-2xl  font-bold top-4 py-3">
+             
+                HEALTHCARE MISSION
               </h2>
               <p className="text-xl font-semibold text-center">
                 Extending a lifeline to those facing crises with transparent and
@@ -51,8 +51,8 @@ const Second = () => {
               <img src="/food.png" alt="Shoes" />
             </figure>
             <div className="card-body gap-4 items-center ">
-              <h2 className="card-title font-bold text-6xl">ESPADA</h2>
-              <h2 className="text-2xl  font-bold top-4"> HUNGER MISSION </h2>
+              <h2 className="card-title font-bold text-6xl pt-5">ESPADA</h2>
+              <h2 className="text-2xl  font-bold top-4 py-3"> HUNGER MISSION </h2>
               <p className="text-xl font-semibold text-center">
                 Providing nourishment and hope through transparent food
                 donations to those facing hunger and food insecurity.
@@ -68,8 +68,8 @@ const Second = () => {
               <img src="/pic.png" alt="Shoes" />
             </figure>
             <div className="card-body gap-4 items-center">
-              <h2 className="card-title font-bold text-6xl">ESPADA</h2>
-              <h2 className="text-2xl  font-bold top-4"> RELIEF INITIATIVE </h2>
+              <h2 className="card-title font-bold text-6xl pt-5">ESPADA</h2>
+              <h2 className="text-2xl  font-bold top-4 py-3"> RELIEF INITIATIVE </h2>
               <p className="text-xl font-semibold text-center">
                 Extending a lifeline to those facing crises with transparent and
                 impactful donations, offering support in times of dire need
