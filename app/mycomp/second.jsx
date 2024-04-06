@@ -3,7 +3,7 @@ import React from "react";
 const Second = () => {
   return (
     <div className="h-screen w-screen bg-white z-20">
-      <div className="bg-[#030511] h-full w-full relative  z-10 top-full rounded-t-[80px] p-12  flex flex-col bg-gradient-to-b from-[#0864e5] to-[#020024]  ">
+      <div className="bg-[#030511] h-full w-full relative  z-10 top-full rounded-t-[80px] p-12  flex flex-col bg-gradient-to-b from-[#609aea] to-[#0864e5]  ">
         <div className=" flex justify-around h-full space-x-40 px-10">
           <div className="card w-auto bg-base-100 shadow-xl image-full transform hover:scale-105 transition-transform duration-300">
             <figure>
@@ -44,7 +44,7 @@ const Second = () => {
         </div>
       </div>
 
-      <div className="bg-[#030511] h-full w-full relative  z-10 top-full rounded-b-[80px]  p-12  flex flex-col bg-gradient-to-b from-[#020024] to-[#0864e5] ">
+      <div className="bg-[#030511] h-full w-full relative  z-10 top-full rounded-b-[80px]  p-12  flex flex-col bg-gradient-to-b from-[#0864e5] to-[#609aea] ">
         <div className=" flex justify-around h-full space-x-40 px-10">
           <div className="card w-auto bg-base-100 shadow-xl image-full transform hover:scale-105 transition-transform duration-300">
             <figure>

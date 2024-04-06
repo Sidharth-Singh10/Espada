@@ -92,10 +92,10 @@ const Content = () => {
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu  menu-horizontal  ">
-            <li className="pt-4   ">
+            <li className="pt-4  px-4 ">
               <a>About Us</a>
             </li>
-            <li className="pt-4   ">
+            <li className="pt-4 px-4  ">
               <details>
                 <summary>Info</summary>
                 <ul className="p-2">
@@ -108,8 +108,11 @@ const Content = () => {
                 </ul>
               </details>
             </li>
-            <li className="pt-4 pr-40 ">
+            <li className="pt-4 px-8 ">
               <a>Contact us</a>
+            </li>
+            <li className=" pt-4 pr-40">
+              <a>Buy ESP</a>
             </li>
             <li >
               <BalanceDisplay />

@@ -3,7 +3,7 @@ import React from "react";
 const First = () => {
   return (
     <div className=" fixed top-0  h-full w-full pt-28 z-0 ">
-      <div className="h-full w-full flex flex-col z-0  items-center bg-gradient-to-b from-[#FFFFFF] to-[#0864e5] ">
+      <div className="h-full w-full flex flex-col z-0  items-center bg-gradient-to-b from-[#FFFFFF] to-[#609aea] ">
         <h1 className=" relative top-[8%] text-5xl font-extrabold pt-10 ">
           <span className="text-[#296aec]"> Transparent </span>
           <span className="text-[#3b3f61]"> Donations, </span>
