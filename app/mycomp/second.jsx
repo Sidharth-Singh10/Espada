@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 const Second = () => {
@@ -16,7 +17,7 @@ const Second = () => {
                 Enabling brighter futures through educational support and
                 opportunities for underprivileged communities.
               </p>
-              <button className="btn btn-outline font-extrabold btn-lg absolute top-[70%] ">
+              <button className="btn font-extrabold btn-lg absolute top-[70%] ">
                 JOIN US
               </button>
             </div>
@@ -36,9 +37,12 @@ const Second = () => {
                 Extending a lifeline to those facing crises with transparent and
                 impactful donations, offering support in times of dire need
               </p>
-              <button className="btn btn-outline font-extrabold btn-lg absolute top-[70%] ">
+              <Link href="/Healthcare" className="absolute top-[70%]">
+              <button className="btn  font-extrabold btn-lg  ">
                 JOIN US
               </button>
+              </Link>
+             
             </div>
           </div>
         </div>
@@ -57,7 +61,7 @@ const Second = () => {
                 Providing nourishment and hope through transparent food
                 donations to those facing hunger and food insecurity.
               </p>
-              <button className="btn btn-outline font-extrabold btn-lg absolute top-[70%] ">
+              <button className="btn font-extrabold btn-lg absolute top-[70%] ">
                 JOIN US
               </button>
             </div>
@@ -74,7 +78,7 @@ const Second = () => {
                 Extending a lifeline to those facing crises with transparent and
                 impactful donations, offering support in times of dire need
               </p>
-              <button className="btn btn-outline font-extrabold btn-lg absolute top-[70%] ">
+              <button className="btn  font-extrabold btn-lg absolute top-[70%] ">
                 JOIN US
               </button>
             </div>
