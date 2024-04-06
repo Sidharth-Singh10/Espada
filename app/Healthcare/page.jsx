@@ -1,13 +1,15 @@
 "use client"
+// import Navbar from "../Components/Navbar";
+import Nav from "../mycomp/nav";
 
 export default function Home() {
     return (
         <div className="h-screen w-screen" >
             <div>
-                <Navbar />
+                <Nav />
             </div>
 
-            <div className="  bg-gradient-to-b from-[#FFFFFF] to-[#E5F0FF] h-full gap-4 flex justify-around p-5">
+            <div className="  bg-gradient-to-b from-[#FFFFFF] to-[#E5F0FF] h-full gap-4 flex justify-around p-5 pt-24">
                 <div className="card w-96 h-full    bg-base-100 shadow-xl image-full transform hover:scale-105 transition-transform duration-300">
                     <figure><img src="/cancer.png" alt="Shoes" /></figure>
                     <div className="card-body gap-10 items-center">
