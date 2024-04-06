@@ -49,9 +49,8 @@ export default function Home() {
 
               <p className="text-xl font-semibold text-center">Enabling brighter futures through educational support and opportunities for underprivileged communities.</p>
 
-              <div className="card-actions justify-end">
-                <button className="btn btn-primary">Buy Now</button>
-              </div>
+              <button className="btn btn-outline font-extrabold btn-lg absolute top-[70%] ">JOIN US</button>
+
             </div>
 
           </div>
@@ -62,9 +61,8 @@ export default function Home() {
               <h2 className="card-title font-bold text-6xl">ESPADA</h2>
               <h2 className="text-2xl  font-bold top-4"> HEALTHCARE MISSION </h2>
               <p className="text-xl font-semibold text-center">Empowering healthcare access for those in need through transparent and impactful donations</p>
-              <div className="card-actions justify-end">
-                <button className="btn btn-primary">Buy Now</button>
-              </div>
+              <button className="btn btn-outline font-extrabold btn-lg absolute top-[70%] ">JOIN US</button>
+
             </div>
           </div>
 
@@ -93,9 +91,8 @@ export default function Home() {
               <h2 className="card-title font-bold text-6xl">ESPADA</h2>
               <h2 className="text-2xl  font-bold top-4"> RELIEF INITIATIVE </h2>
               <p className="text-xl font-semibold text-center">Extending a lifeline to those facing crises with transparent and impactful donations, offering support in times of dire need</p>
-              <div className="card-actions justify-end">
-                <button className="btn btn-primary">Buy Now</button>
-              </div>
+              <button className="btn btn-outline font-extrabold btn-lg absolute top-[70%] ">JOIN US</button>
+
             </div>
           </div>
 
