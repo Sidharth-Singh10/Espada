@@ -10,21 +10,10 @@ export default function Home() {
             <div className="  bg-gradient-to-r from-blue-300 to-purple-300 h-full gap-4 flex justify-around p-5">
                 <div className="card w-96 h-full    bg-base-100 shadow-xl image-full transform hover:scale-105 transition-transform duration-300">
                     <figure><img src="/cancer.png" alt="Shoes" /></figure>
-                    <div className="card-body gap-4 items-center">
+                    <div className="card-body gap-10 items-center">
                         <h2 className="card-title font-bold text-6xl">ESPADA</h2>
-                        <h2 className="text-2xl  font-bold top-4"> HEALTHCARE MISSION </h2>
-                        <p className="text-xl font-semibold text-center">Empowering healthcare access for those in need through transparent and impactful donations</p>
-                        <button className="btn btn-outline font-extrabold btn-lg absolute top-[70%] ">JOIN US</button>
-
-                    </div>
-                </div>
-
-                <div className="card w-96 h-full    bg-base-100 shadow-xl image-full transform hover:scale-105 transition-transform duration-300">
-                    <figure><img src="/emergency.png" alt="Shoes" /></figure>
-                    <div className="card-body gap-4 items-center">
-                        <h2 className="card-title font-bold text-6xl">ESPADA</h2>
-                        <h2 className="text-2xl  font-bold top-4"> HEALTHCARE MISSION </h2>
-                        <p className="text-xl font-semibold text-center">Empowering healthcare access for those in need through transparent and impactful donations</p>
+                        <h2 className="text-2xl  font-bold top-4"> CANCER FUND </h2>
+                        <p className="text-xl font-semibold text-center">Join us in the fight against cancer by supporting our dedicated Cancer Fund, providing critical resources for research, treatment, and patient support.</p>
                         <button className="btn btn-outline font-extrabold btn-lg absolute top-[70%] ">JOIN US</button>
 
                     </div>
@@ -32,14 +21,26 @@ export default function Home() {
 
                 <div className="card w-96 h-full    bg-base-100 shadow-xl image-full transform hover:scale-105 transition-transform duration-300">
                     <figure><img src="/healthcare.png" alt="Shoes" /></figure>
-                    <div className="card-body gap-4 items-center">
+                    <div className="card-body gap-10 items-center">
                         <h2 className="card-title font-bold text-6xl">ESPADA</h2>
-                        <h2 className="text-2xl  font-bold top-4"> HEALTHCARE MISSION </h2>
-                        <p className="text-xl font-semibold text-center">Empowering healthcare access for those in need through transparent and impactful donations</p>
+                        <h2 className="text-2xl  font-bold top-4"> GENERAL FUND </h2>
+                        <p className="text-xl font-semibold text-center">Make a difference where it's needed most by contributing to our General Fund, ensuring vital support for various healthcare initiatives and programs</p>
                         <button className="btn btn-outline font-extrabold btn-lg absolute top-[70%] ">JOIN US</button>
 
                     </div>
                 </div>
+
+                <div className="card w-96 h-full    bg-base-100 shadow-xl image-full transform hover:scale-105 transition-transform duration-300">
+                    <figure><img src="/emergency.png" alt="Shoes" /></figure>
+                    <div className="card-body gap-10 items-center">
+                        <h2 className="card-title font-bold text-6xl">ESPADA</h2>
+                        <h2 className="text-2xl  font-bold top-4"> EMERGENCY FUND</h2>
+                        <p className="text-xl font-semibold text-center">Be a beacon of hope in times of crisis by donating to our Emergency Fund, offering swift assistance to individuals facing urgent medical needs and unforeseen emergencies</p>
+                        <button className="btn btn-outline font-extrabold btn-lg absolute top-[70%] ">JOIN US</button>
+
+                    </div>
+                </div>
+
 
 
             </div>
