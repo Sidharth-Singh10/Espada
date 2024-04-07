@@ -81,7 +81,7 @@ const exchangeRateEndpoint = `https://api.exchangerate-api.com/v4/latest/${baseC
 
   const changebalance = () =>
   {
-    setbalance('1.27');
+    setbalance('1.33');
   }
 
 const converts = async () => {
