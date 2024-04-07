@@ -66,7 +66,7 @@ const { publicKey } = useWallet();
     setinputs(event.target.value);
   };
 
-  const [balances,setbalance] = useState('1.27');
+  const [balances,setbalance] = useState('1.33');
 
 const apiKeyExchangeRate = 'YOUR_API_KEY'; // Replace with your API key
 const baseCurrency = 'USD';

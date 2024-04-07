@@ -48,7 +48,7 @@ export default function Home() {
                   <input
                     type="text"
                     placeholder="69 ESP"
-                    className="input input-bordered input-primary w-full max-w-xs"
+                    className="input input-bordered text-black input-primary w-full max-w-xs"
                   />
                   <Link href="/Profile">
                   <button className="btn btn-primary">Enter</button>

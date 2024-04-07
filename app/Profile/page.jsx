@@ -72,7 +72,7 @@ export default function Profile() {
                     </span>
                     <span className="text-end ml-36">
                       <span className="font-bold">Time Stamp</span>
-                      <span className="text-cyan-700">: 2 hrs ago</span>
+                      <span className="text-cyan-700">:Now</span>
                     </span>
                   </li>
                   <li>
